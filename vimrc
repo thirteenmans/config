@@ -9,7 +9,7 @@ set wildignore=*.o,*~,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 set ruler " Always show current position
 set number " Show line number
-set colorcolumn=80 " Show line at 80 char
+set colorcolumn=120 " Show line at 80 char
 set ambiwidth=double
 " set cursorline
 " set cursorcolumn
@@ -36,6 +36,7 @@ set smarttab
 set ai " Auto indent
 set si " Smart indent
 set nowrap
+set nolist " Don't show char
 
 " Yank to system clipboard
 vnoremap <Leader>y "+y
@@ -96,7 +97,7 @@ filetype plugin indent on
 " set background=dark
 " colorscheme phd
 
-" set t_Co=256
+set t_Co=256
 set background=dark
 colorscheme molokai
 let g:molokai_original=1
